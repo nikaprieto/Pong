@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+  }
+  
+  .game-container {
+    position: relative;
+    width: 800px; /* Aumenta el ancho del campo de juego */
+    height: 600px; /* Aumenta la altura del campo de juego */
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .paddle {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: #000;
+  }
+  
+  #paddle1 {
+    left: 10px;
+  }
+  
+  #paddle2 {
+    right: 10px;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 60px; /* Tamaño de la pelota más grande */
+    height: 60px;
+    background-image: url('pelota.jpg'); /* Usar la imagen como fondo */
+    background-size: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+    border-radius: 50%; /* Para mantener la forma circular */
+  }
+  
+  .score {
+    position: absolute;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  #score1 {
+    left: 50px;
+    top: 10px;
+  }
+  
+  #score2 {
+    right: 50px;
+    top: 10px;
+  }
+  
+  .instructions {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  
